@@ -1,7 +1,11 @@
+import './styles/Footer.css';
+
 function Footer() {
 	return (
 		<section className="footer">
-			<h1>Footer</h1>
+			<div className="container">
+				<span className="text-sm">Footer</span>
+			</div>
 		</section>
 	);
 }

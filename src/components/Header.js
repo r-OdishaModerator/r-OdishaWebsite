@@ -5,8 +5,13 @@ import './styles/Header.css';
 function Header() {
 	return (
 		<section className="header">
-			<NavLink to="">Home</NavLink>
-			<NavLink to="meetups">Meetups</NavLink>
+			<div className="container">
+				<div className="nav-headers">App Name</div>
+				<div className="nav-links">
+					<NavLink to="">Home</NavLink>
+					<NavLink to="meetups">Meetups</NavLink>
+				</div>
+			</div>
 		</section>
 	);
 }
