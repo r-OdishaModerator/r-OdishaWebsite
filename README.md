@@ -1,3 +1,1 @@
-# r-OdishaWebsite
-
-The website for the official r/Odisha subreddit
+#Single Page Version of the r/Odisha website
