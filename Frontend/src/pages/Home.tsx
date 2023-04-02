@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './styles/Home.css';
 
 const fetchSubRedditData = async () => {
@@ -22,6 +23,7 @@ function Home() {
 
 	return (
 		<section className="home">
+			{JSON.stringify(useLocation())}
 			<h3>subscriberCnt: {subscriberCnt}</h3>
 			<h3>activeUserCnt: {activeUserCnt}</h3>
 		</section>
