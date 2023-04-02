@@ -1,3 +1,40 @@
 section.home {
-	@apply container;
+	@apply container flex h-full w-full max-w-full flex-col items-center justify-center gap-10 bg-slate-900 bg-cover p-0 text-neutral-50;
+}
+
+.text-container {
+	@apply flex flex-col items-center gap-5;
+}
+
+.subreddit-link {
+	@apply text-blue-300 underline;
+}
+
+.subreddit-name {
+	@apply justify-self-center text-9xl tracking-[.25em] text-amber-500 transition-all;
+}
+
+.sub-stats {
+	@apply flex gap-5 justify-self-start text-sm;
+}
+
+.actions-container {
+	@apply flex flex-col items-center justify-center gap-5;
+}
+
+.actions-btn-group {
+	@apply flex gap-10;
+}
+
+.btn.btn-discord {
+	@apply rounded-md bg-purple-500 text-neutral-50 hover:bg-purple-700 active:bg-purple-900;
+}
+
+.btn.btn-reddit {
+	@apply rounded-md bg-red-500 text-neutral-50 hover:bg-red-700 active:bg-red-900;
+}
+
+.discord-icon,
+.reddit-icon {
+	@apply mr-1;
 }

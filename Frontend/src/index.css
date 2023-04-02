@@ -1,10 +1,60 @@
+/*
+ * Global Styles Goes Here... 
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+@layer base {
+	html {
+		font-family: 'Poppins', Helvetica, Arial, sans-serif;
+	}
+
+	html,
+	body,
+	#root {
+		height: 100%;
+	}
+
+	h1 {
+		@apply text-4xl;
+	}
+
+	h2 {
+		@apply text-3xl;
+	}
+
+	h3 {
+		@apply text-2xl;
+	}
+
+	h4,
+	p,
+	button {
+		@apply text-base;
+	}
+
+	h5 {
+		@apply text-sm;
+	}
+
+	h6 {
+		@apply text-xs;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	strong {
+		@apply font-semibold;
+	}
+
+	.btn {
+		@apply bg-neutral-300 px-9 py-3 font-semibold text-slate-900 hover:bg-neutral-400;
+	}
 }
